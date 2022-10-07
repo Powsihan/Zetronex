@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google font -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Font awson icons -->
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/flash-back---demo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Page Title -->
+    <title>Sign In | ZetroneX </title>
+</head>
+
+<body>
+
+    <!--Navigation bar start-->
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="home.html"><img src="img/logo .png"></a>
+                </div>
+                
+                <ul class="links">
+                    <li class="menu"><a href="home.html">Home</a></li>
+                    <li class="menu"><a href="about.html">About</a></li>
+                    <li class="menu">
+                        <a href="#" class="desktop-link">Features</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="customers.html">Customers</a></li>
+                    <li class="menu"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu"><a href="support.html">Support</a></li>
+                    <li class="menu" id="login"><a href="login.html"><i class="fa fa-user"></i> <span id="logintext"> <span style="text-shadow: 2px 2px 50px white,2px 2px 50px white,2px 2px 20px white;">Login</a></li>
+                </ul>
+
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon" id="go"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+
+    <!--Navigation bar End-->
+
+
+
+
+
+    <!--Login section start-->
+    <section>
+        <form method="post">
+            <div class="All-elements">
+                <h1>Sign In</h1>
+                <br>
+                <div class="field">
+                    <input type="text" placeholder="E-mail or Phone number" required>
+
+
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="forgot-pass"><a href="#">Forgot Password?</a>
+                </div>
+                <br>
+
+                <button type="submit">Sign In</button>
+                <br><br>
+
+                <div class="signup-link">Not a member? <a href="signup.html" target="_self">Signup Now</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--Login section end-->
+
+
+      <!-- Footer section  -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="connect"> No11,Colombo-6,SriLanka</span></a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i><span class="connect"><span class="mail"> zetronex11@gmail.com</span></a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i><span class="connect"> +94 113 789 456</span></li>
+                        <li><a href="#"><i class="fas fa-clock"></i><span class="connect"> Mon-Fri 8:00 AM to 5:00 PM</span></a></li>
+                    </ul>
+                 
+                </div>
+                <div class="footer-col">
+                    <h4>Quick linlk</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                 <img src="img/logo .png" class="footer-logo" alt="logo" height="100px" width="200px">
+                </div>
+             <div class="footer-col">
+                 <h4>Features</h4>
+                 <ul>
+                     <li><a href="product.html">Products</a></li>
+                     <li><a href="Services.html">Servivice</a></li>	
+                 </ul>
+             </div>
+                <div class="footer-col" style="width: 300px; padding-top:20px ;">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+             
+            </div>
+         
+        </div>
+        <div class="copyright">
+            <center><hr class="line" style="width: 90%;"> </center>
+            <div class="copyright-text">
+               Copyright © 2021 ZetroneX Solutions. All Rights Reserved.
+            </div>
+        </div>
+   </footer>
+ 
+    <!-- End Footer section  -->
+
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer</title>
+    <!-- bootstap cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Font awson icons -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />   
+</head>
+<body>
+       <!--Navigation bar start-->
+
+       <nav class="navbar navbar-expand-lg navbar-dark bg-img text-white" style="background-image: url(img/88.jpg);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home bootstap .html"><img src="img/logo .png" alt="logo" height="40px" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home bootstap .html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-primary" href="#">Services</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">Products</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="custermer bootstrap.html">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link" href="login bootstap.html"><i class="fa fa-user fs-5"></i></a>
+              </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--Navigation bar End-->
+   
+    <!--Main section start-->
+
+
+    <div class="background">
+
+        <div class="text-box">
+            <div class="linex"></div>
+            <div class="layer"></div>
+            <h1>Zetr<span class="ve">oneX</span></h1>
+        </div>
+
+    </div>
+    <style>
+      .background {
+    background-image: url("img/bac.jpg");
+    background-color: #000000;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-box {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box h1 {
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgb(12, 15, 218), 0 0 20px rgb(12, 15, 218), 0 0 40px rgb(12, 15, 218), 0 0 80px rgb(12, 15, 218), 0 0 120px rgb(12, 15, 218);
+}
+
+.text-box .ve {
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red;
+}
+
+.linex {
+    position: absolute;
+    bottom:70px;
+    right: 300px;
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    z-index: 2;
+    box-shadow: 0 0 10px #3de7fd, 0 0 20px #3de7fd, 0 0 40px #3de7fd, 0 0 80px #3de7fd, 0 0 120px #3de7fd;
+    animation: AnimateLine 3s linear infinite;
+}
+
+@keyframes AnimateLine {
+    0%,
+    5% {
+        transform: scaleY(0) translateX(0);
+        transition: .50s ease transform;
+    }
+    10% {
+        transform: scaleY(1) translateX(0);
+        transition: .50s ease transform;
+    }
+    90% {
+        transform: scaleY(1) translateX(calc(400px - 10px));
+        transition: .50s ease transform;
+    }
+    95%,
+    100% {
+        transform: scaleY(0) translateX(calc(10px - 10px));
+        transition: .50s ease transform;
+    }
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    animation: AnimateLayer 6s linear infinite
+}
+
+@keyframes AnimateLayer {
+    0%,
+    2.5% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(0);
+    }
+    45% {
+        transform: translateX(100%);
+    }
+    47.5%,
+    50% {
+        transform: translateX(100%);
+    }
+    50.001%,
+    52.5% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    95% {
+        transform: translateX(0%);
+    }
+    97.5%,
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .text-box {
+        transform: scale(0.75);
+        position: relative;
+        left: -50px;
+    }
+}
+    </style>
+
+    <!--Main section end-->
+
+    <!-- conter animation-->
+   <div class="container-fluid pt-3 text-center">
+    <div class="row">
+      <div class="col-md-4 fs-1">
+        <i class="fas fa-user-check "></i>
+        <div class="counter" data-target="457"></div>
+        <span>Projects</span>
+    </div>
+    <div class="col-md-4 fs-1">
+        <i class="fas fa-users "></i>
+        <div class="counter" data-target="387094"></div>
+        <span>Community</span>
+    </div>
+    <div class="col-md-4 fs-1">
+        <i class="fas fa-user-clock "></i>
+        <div class="counter" data-target="52578"></div>
+        <span>Hours of works</span>
+    </div>
+    </div>
+   </div>
+            <!-- counteranimation -->
+   <script>
+
+       const counters = document.querySelectorAll('.counter');
+       counters.forEach((counter) => {
+        counter.innerText ='0';
+
+        const updatecounter = () =>{
+            const target = counter.getAttribute('data-target');
+            const c = +counter.innerText;
+            const increment =target /250;
+            if (c < target){
+                counter.innerText = `${Math.ceil(c + increment)}`;
+                setTimeout(updatecounter, 1);
+                
+            }
+            else{
+                counter.innerText = target;
+            }
+        };
+        updatecounter();
+       });
+   </script>
+
+    <!-- Footer section  -->
+    
+    <div class=" mt-5 p-4 bg-image text-white text-center" style="background-image: url('img/88.jpg');">
+        <!-- Footer section  -->
+    <footer class="footer" >
+        <div class="container-">
+            <div class="row">
+                <div class="col-md-3 mt-3">
+                    <h4>Contact Us</h4>
+                    <ul type="none">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="connect"> No11,Colombo-6,SriLanka</span></a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i><span class="connect"><span class="mail"> zetronex11@gmail.com</span></a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i><span class="connect"> +94 113 789 456</span></li>
+                        <li><a href="#"><i class="fas fa-clock"></i><span class="connect"> Mon-Fri 8:00 AM to 5:00 PM</span></a></li>
+                    </ul>
+                 
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h4>Quick link</h4>
+                    <ul type="none">
+                        <li><a href="home bootstap .html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="custermer bootstrap.html">Customers</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-3">
+                 <img src="img/logo .png" class="footer-logo" alt="logo" height="100px" width="200px">
+                </div>
+             <div class="col-md-3 mt-3">
+                 <h4>Features</h4>
+                 <ul type="none">
+                     <li><a href="#">Products</a></li>
+                     <li><a href="#">Servivice</a></li>	
+                 </ul>
+             </div>
+                <div class="footer col" style="width: 300px; padding-top:20px ;">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+             
+            </div>
+         
+        </div>
+     <div class="copyright">
+         <center><hr class="line" style="width: 90%;"> </center>
+         <div class="copyright-text">
+            Copyright © 2021 ZetroneX Solutions. All Rights Reserved.
+         </div>
+     </div>
+     <style>
+         a{
+            color: white;
+          text-decoration: none;
+         }
+     </style>
+   </footer>
+      </div>
+    <!-- End Footer section  -->
+    <!-- javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+<style>
+    .single-customer:hover {
+    background: radial-gradient(circle, #00ccff, #0190f9);
+    transform: scale(1.2);
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google font  -->
+    <meta name="viewport" content="width=deivece-width,initial-scale=1.0">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/flash-back---demo" />
+    <title>Support | ZetroneX</title>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/support.js"></script>
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Font awson icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+
+<body>
+
+    <!--Navigation bar start-->
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="home.html"><img src="img/logo .png"></a>
+                </div>
+               
+                <ul class="links">
+                    <li class="menu"><a href="home.html">Home</a></li>
+                    <li class="menu"><a href="about.html">About</a></li>
+                    <li class="menu">
+                        <a href="#" class="desktop-link">Features</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="customers.html">Customers</a></li>
+                    <li class="menu"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu"><a href="support.html"><span style="font-size: 30px;text-shadow: 2px 2px 50px white,2px 2px 50px white,2px 2px 20px white;">Support</span></a></li>
+                    <li class="menu" id="login"><a href="login.html"><i class="fa fa-user"></i> <span id="logintext"> Login</span></a></li>
+                </ul>
+
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon" id="go"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+
+    <!--Navigation bar End-->
+    <br><br><br><br><br><br><br>
+
+
+    <!--Support section start-->
+   <div class="taboption">
+        <button class="tablink" onclick="openPage('subscription', this, 'blue')" id="defaultOpen">Subscription</button>
+    <button class="tablink" onclick="openPage('consulting', this, 'red')">Consulting</button>
+    <button class="tablink" onclick="openPage('update', this, 'blue')">Update</button>
+    <button class="tablink" onclick="openPage('training_and_internship', this, 'red')">Training and Internship</button>
+   </div>
+
+    <!-- subscription service -->
+    <div class="tabcontent" id="subscription">
+        <div class="sub">
+            <br><br><br>
+            <h1 style="font-weight:100;font-size: 50px;">ZetroneX Licensing and Subscription Services</h1>
+            <h3>Critical enterprise projects need enterprise-grade support.</h3>
+
+            <p>ZetroneX supported distributions are licensed under the ZetroneX Software License. This license allows you to use the product free for non-commercial use. Commercial customers can also use the products in commercial settings and take advantage
+                of a full range of enterprise-grade support and maintenance services, including:</p>
+            <img src="img/support img.png" alt="support image" class="supprt_img"><br><br>
+        </div>
+
+        <!-- ul cahrt box  -->
+
+        <div class="chart">
+            <ul>
+                <li>Use of the supported distribution for commercial development, pre-production, and production during the subscription term.</li><br>
+                <hr color="gray"><br>
+                <li>Subscription to the ZetroneX Update service and related tooling, providing continuous access to product improvements, bug fixes, and performance enhancements.</li><br>
+                <hr color="gray"><br>
+                <li>Access to a variety of installation mechanisms to conveniently deploy the product into the environment of your choice.</li><br>
+                <hr color="gray"><br>
+                <li>24x7 expert incident support with aggressive response and resolution times to keep you running smoothly.
+                </li><br>
+                <hr color="gray"><br>
+                <li>Query support to boost productivity with expert assistance and guidance on product usage, development, migration, tuning, and best practices.</li><br>
+                <hr color="gray"><br>
+                <li>Priority support option with an on- or off-site dedicated ZetroneX Technical Account Manager.</li><br>
+                <hr color="gray"><br>
+                <li>Access to a variety of optional managed and consulting services.</li>
+            </ul>
+        </div>
+        <br><br><br>
+        <!-- this shows only screen size>900  -->
+        <div class="price_wide">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="platinum" class="mony">
+                                <div class="triangle-right"></div>
+                                <img src="img/platinum.png" alt="platinum_logo" height="75px" width="75px" style="float: right;">
+                                <h4> Platinum</h4><br> 1TB Cloud storage <br> licence 5 years valid <br> update 5 years <br> maintenance 5 years <br>
+                                <center><input type="button" value="5000Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div id="gold" class="mony">
+                                <div class="triangle-right"></div>
+                                <img src="img/gold.png" alt="gold_logo" height="75px" width="75px" style="float: right;">
+                                <h4>Gold</h4><br> 500GB Cloud storage <br> licence 3 years valid <br> update 3 years <br> maintenance 3 years <br>
+                                <center><input type="button" value="3500Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div id="silver" class="mony">
+                                <div class="triangle-right"></div>
+                                <img src="img/silver.png" alt="silver_logo" height="75px" width="75px" style="float: right;">
+                                <h4>Silver</h4><br> 200GB Cloud storage <br> licence 1 year valid <br> update 1 year <br> maintenance 1 year <br>
+                                <center><input type="button" value="2000Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </center>
+        </div>
+        <!-- this shows only screen size<900  -->
+        <center>
+            <div class="price">
+
+                <div id="platinum" class="mony">
+                    <div class="triangle-right"></div>
+                    <!-- image  -->
+                    <img src="img/platinum.png" alt="platinum_logo" height="50px" width="50px">
+                    <h4>Platinum</h4>
+                    1TB Cloud storage <br> licence 5 years valid <br> update 5 years <br> maintenance 5 years <br>
+                    <center><input type="button" value="5000Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                </div>
+                <div id="gold" class="mony">
+                    <div class="triangle-right"></div>
+                    <img src="img/gold.png" alt="gold_logo" height="50px" width="50px" style="float: right;">
+                    <h4>Gold</h4>
+                    500GB Cloud storage <br> licence 3 years valid <br> update 3 years <br> maintenance 3 years <br>
+                    <center><input type="button" value="3500Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                </div>
+                <div id="silver" class="mony">
+                    <div class="triangle-right"></div>
+                    <img src="img/silver.png" alt="silver_logo" height="50px" width="50px" style="float: right;">
+                    <h4>Silver</h4>
+                    200GB Cloud storage <br> licence 1 year valid <br> update 1 year <br> maintenance 1 year <br>
+                    <center><input type="button" value="2000Rs" class="btn" style="margin: 20px;" onclick="openpay()"></center>
+
+                </div>
+            </div>
+
+        </center>
+        <br><br><br>
+            <!-- payment section  -->
+            <div class="payment" id="paymentpopup">
+                <h2>ZetroneX Payment Form</h2>
+                <form action="" method="dialog" id="paymentphone" onsubmit="opensuccess()">
+    
+                    <h4>Account</h4>
+                    <div class="input-group">
+                        <div class="input-box" id="fullname">
+                            <input type="text" placeholder="Full Name"  class="name" required>
+                            <i class="fa fa-user" ></i>
+                        </div>
+                    
+                    
+                        <div class="input-box" id="nickname">
+                            <input type="text" placeholder="Nick Name"  class="name" required>
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="input-group" id="email">
+                        <h4>Email</h4>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email Adress"  class="name" size="52" required>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="input-group" id="dof">
+                            <h4>Date of Birth</h4>
+                        <div class="input-box" id="date">
+                            <input type="date"  class="name" required>
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>    
+                    <div class="input-group" id="gen">
+                        <h4>Gender</h4>
+                        <div class="input-box" id="gender">
+                            <input type="radio" name="gender" id="b1" class="radio" checked>
+                            <label for="b1">Male</label>
+                            <input type="radio" name="gender" id="b2" class="radio" >
+                            <label for="b2">Female</label>
+                        </div>
+                    </div>
+                    <div class="input-group" id="paydetails">
+                        <h4>Payment Details</h4>
+                        <div class="input-box" id="card">
+                            <div class="visa">
+                            <input type="radio" name="pay" id="bc1" checked class="radio"  style="width: 200px;">
+                            <label for="bc1" class="paypotion"><span><i class="fab fa-cc-visa" id="visa"></i>Credit Card</span></label>
+                            </div>
+                            <div class="payble" >
+                            <input type="radio" name="pay" id="bc2" class="radio"  style="width: 200px;">
+                            <label for="bc2" class="paypotion"><i class="fab fa-cc-paypal" id="paypal"></i><span>payble</span></label>
+                        
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box" id="cardnumber">
+                            <input type="tel"  class="name" size="53px" placeholder="Card Number" required>
+                            <i class="fas fa-credit-card"></i> 
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box" id="select">
+                            <select name="payment-methord" id="list" onchange="grtpack()">
+                                <option value="platinum" selected>platinum  <span class="coste"> 5000.00Rs</span></option>
+                                <option value="gold" >gold  <span class="coste"> 3500.00Rs</span></option>
+                                <option value="silver">silver  <span class="coste"> 2000.00Rs</span></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group" id="paybtn">
+                        <div class="input-box" id="select">
+                            <button type="submit" class="buton" >PAY</button>    
+                        </div>
+                    </div>
+                    <button  type="button" id="payclose" onclick="closepay()">x</button>
+                </form>
+            
+            </div>
+            <div id="success" class="successbox">
+                <button  type="button" id="succesclose"class="buton" onclick="closesuccess()" >x</button>
+                You have successfully subscribed <br> Further infromation will be sent to your email<br> Use the same email Id to signup <br> Thank You.
+            </div>
+
+        <div class="SOFTWARE_LICENSE" style="font-weight: 100px;">
+            <center>
+                <div>
+                    <h3> ZetroneX SOFTWARE LICENSE</h3><br>
+                    <p>
+                        The ZetroneX Software License covers all our supported product distributions, updates, and update tooling. Supported distributions feature: 100% compatible with community open source versions<br><br>
+                        <hr color="blue"><br> Enterprise-grade supported distributions in a variety of convenient installation formats<br><br>
+                        <hr color="blue" width="90%"><br> Features for accessing and managing updates<br><br>
+                        <hr color="blue" width="80%"> <br>Free use for evaluation, non-commercial, and educational purposes<br><br>
+                    </p>
+                </div>
+
+                <th><input type="button" value="ZetroneX Software license" class="btn" style="margin: 10px;"></th>
+                <th> <input type="button" value="OEM and Saas Licensing option" class="btn" style="margin: 10px;"></th>
+
+        </div>
+        </center>
+    </div>
+
+    <br><br>
+    <!-- consulting tap -->
+    <div class="tabcontent" id="consulting">
+
+        <center>
+            <h3 class="heding">ZetroneX Consulting Services</h3>
+        </center>
+
+        <p class="para">ZetroneX offers a full range of services to help you get the most out of your ZetroneX project. Our team has experience working with hundreds of customers in virtually every industry. Our customers achieve their business objectives with smooth,
+            rapid, and successful ZetroneX deployments. We bring expertise to help bring out the best in your project team, with services oriented towards knowledge sharing, internal talent enablement, and strategic skills augmentation. Our services encompass
+            strategy, architecture, implementation, and training, and provide access to talent from project conception, through planning and architecture phases, to successful implementation, deployment, and operation. Additional options for a full range
+            of services, also extending to turnkey complete project delivery, are available from our certified ZetroneX Partners.</p>
+        <center><input type="button" value="CONTACT US" class="btn"></center>
+
+    </div>
+    <br><br><br>
+    <!-- update  -->
+    <div class="tabcontent" id="update">
+        <h1 style="text-align: center;font-size: 50px;">Update</h1><br>
+        <p style="text-align: center;" class="updatepera">Continuous maintenance of your solution ensures system health and security throughout its lifetime. The WSO2 Update service delivers fixes to subscribers in an easy-to-consume format throughout the product lifecycle:</p><br>
+        <div class="table_si">
+            <table class="tablcon">
+                <tr>
+                    <td>ZetroneX Updates improve the efficiency and quality of your evaluation, proof of concepts, and development work, removing the potential impacts of any known issues.</td>
+                    <td>ZetroneX Updates continually address real-world issues identified by ZetroneX or encountered by other ZetroneX customers, eliminating potential impacts to your production systems before they can occur.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">ZetroneX maintains constant vigilance for any potential security vulnerabilities, monitoring hundreds of open source projects, collecting and assessing security reports from users or academics, running advanced code security reviews
+                        and using the best in automated code analysis tools. We develop private security bulletins and security updates to ensure subscribers have state-of-the-art-security in place.
+                    </td>
+                    <td>Each update is packaged for easy deployment in conjunction with our ZetroneX Update Manager and In-place Update tools. Updates are deployed by our team for ZetroneX Cloud and ZetroneX Managed Services customers as a matter of course</td>
+                </tr>
+                <tr>
+                    <td>Update channels allow you to select delivery updates or to focus only on security updates as appropriate to your project history and lifecycle.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="update_suport">
+            <h3 style="font-size: 50px;text-align: center;">ZetroneX SUPPORT</h3>
+            <br> Our support team relies on a flat structure - developers and customer success staff skilled in the inner workings of all things ZetroneX. You can be sure your queries are handled by experts from the start, without repeated escalations.
+            Our customer success engineers are globally distributed to operate on a 24x7x365 basis with an enterprise-grade SLA.
+            <br> ZetroneX Support features a private support ticketing system, ensuring responses are quick, reliable, and fully documented through to resolution.
+            <br> Need some support with your evaluation? We’d be happy to extend Evaluation Support, apply below.
+            <br>
+            <h5><b style="color: rgb(205, 205, 252);">Support Services include:</b></h5>
+            <br>
+            <b>Production support</b> features a 24x7x365 global severity-based SLA with as little as 1 hour maximum response time for high severity incidents. There are no limits to incident tickets. Incidents that require the development and delivery
+            of a product fix are coordinated with ZetroneX Update.
+            <br>
+            <br>
+            <hr color="blue">
+            <b>Developer suppor</b> t features a 1 business day SLA, to answer general queries about ZetroneX product features and usage, best practices, and general product assistance. Query support is utilized on an hourly basis, with a generous entitlement
+            included in each subscription proportional to total fees.
+            <br>
+            <hr color="blue">
+            <br>
+            <b>A Technical Account Manager</b> provides you the option for a named support contact who can coordinate issues and manage a priority support queue during working hours in your timezone and an option for unlimited query support. We include
+            options for onsite presence at your location.
+            <br>
+
+        </div>
+
+        <div class="manage">
+            <h3>ZetroneX MANAGED SERVICES</h3>
+            <br> ZetroneX Managed Services provides a team of dedicated ZetroneX engineers to host, run, and maintain any combination of licensed ZetroneX products in the Cloud.
+            <br> With this service you get:
+            <br><br>
+            <ul>
+                <li>ZetroneX software hosted on dedicated virtual machines not shared with any other customers.</li>
+                <li>Leverages your existing Amazon, Azure, or Google Cloud infrastructure accounts.</li>
+                <li>Customized deployment of any combination of ZetroneX products in any region to suit your specific needs.
+                </li>
+                <li>Conforms to best practices for configuration, network connectivity with your data center, and security.
+                </li>
+                <li>Full service operations, with 24x7 monitoring, backups, and product update cycles.</li>
+                <li>Automatic incident creation when service impairment is detected.</li>
+                <li>99.99% uptime SLA with service credits.</li>
+                <li>Substantial TCO savings versus acquiring in-house operational expertise</li>
+                <li>A “Lite” version employing automated scripts for setup and maintenance of common configurations of single products, at an unbeatable price.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- training_and_internship -->
+    <div class="tabcontent" id="training_and_internship">
+        <h3>TRAINING & CERTIFICATION</h3>
+        <br>
+
+        <div class="trainig">
+            <table>
+                <tr>
+                    <th class="thead">Instructor-led Training</th>
+                    <th colspan="2" class="thead">Certification</th>
+                </tr>
+                <tr>
+                    <td>Train your development team in ZetroneX product usage, administration, and architecture, with one of our many courses, customized to your level and objectives. Delivery options support on-site and distributed team
+                    </td>
+                    <td colspan="2">Certification establishes mileposts and provides recognition for expertise acquired on ZetroneX products. A path towards certification for your developers ensures a consistent baseline of skills, motivates developers to achieve mastery,
+                        and supports career advancement and recruiting efforts. ZetroneX can design a certification benefit program for your staff.</td>
+                </tr>
+            </table>
+            <td><input type="button" value="TRAINING COURSES" class="btn" style="margin: 20px;"></td>
+            <td><input type="button" value="SELF-PACED TRAINING" class="btn" style="margin: 20px;"></td>
+            <td><input type="button" value="CERTIFICATION" class="btn" style="margin: 20px;"></td>
+        </div>
+
+         <!-- conter animation-->
+   <div class="counter-animation" onscroll="counter()">
+    <div class="counter-container">
+        <i class="fas fa-user-check"></i>
+        <div class="counter" data-target="457"></div>
+        <span>Projects</span>
+    </div>
+    <div class="counter-container">
+        <i class="fas fa-users"></i>
+        <div class="counter" data-target="387094"></div>
+        <span>Community</span>
+    </div>
+    <div class="counter-container">
+        <i class="fas fa-user-clock"></i>
+        <div class="counter" data-target="52578"></div>
+        <span>Hours of works</span>
+    </div>
+   </div>
+   <script>
+       
+    // counter animation 
+    // function counter() {
+        const counters = document.querySelectorAll('.counter');
+    counters.forEach((counter) => {
+     counter.innerText ='0';
+
+     const updatecounter = () =>{
+         const target = counter.getAttribute('data-target');
+         const c = +counter.innerText;
+         const increment =target /250;
+         if (c < target){
+             counter.innerText = `${Math.ceil(c + increment)}`;
+             setTimeout(updatecounter, 1);
+             
+         }
+         else{
+             counter.innerText = target;
+         }
+     };
+     updatecounter();
+    });
+  
+   </script>
+    </div>
+    
+  
+
+    <!-- chat box  -->
+    <button class="open-button" onclick="openform()"><i class="fa fa-headset" style="font-size:40px;"><span
+                class="chat_btn" style="font-size: 30px;">Chat</span></i></button>
+    <div class="chat-popup" id="chatbox" style="font-size: 10px;">
+        <form class="chatform">
+            <h1 class="chat-title">
+                <center>Chat</center>
+            </h1>
+            <i id="headset_icon" class="fa fa-headset" style="font-size:20px;"></i>
+            <label for="chat" class="message-text" style="color: rgba(0, 0, 0, 0);">MESSAGE</label>
+            <span class="weltext1">Welcom to ZetroneX </span><br><br><span class="weltext2"> How can I help you?</span>
+            <i id="user_chat" class="fa fa-user" style="font-size:20px;"></i>
+            <textarea class="textarea-chat" placeholder="Type message.."></textarea>
+            <button type="submit" class="send" onclick="alert('message sent \n thank you')"> <i id="user"
+                    class="fa fa-paper-plane" style="font-size:15px;">Send</i></button>
+            <button type="button" class="close-btn" onclick="closeform()">Close</button>
+
+        </form>
+    </div>
+
+    <!--Support section end-->
+
+      <!-- Footer section  -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="connect"> No11,Colombo-6,SriLanka</span></a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i><span class="connect"><span class="mail"> zetronex11@gmail.com</span></a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i><span class="connect"> +94 113 789 456</span></li>
+                        <li><a href="#"><i class="fas fa-clock"></i><span class="connect"> Mon-Fri 8:00 AM to 5:00 PM</span></a></li>
+                    </ul>
+                 
+                </div>
+                <div class="footer-col">
+                    <h4>Quick linlk</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                 <img src="img/logo .png" class="footer-logo" alt="logo" height="100px" width="200px">
+                </div>
+             <div class="footer-col">
+                 <h4>Features</h4>
+                 <ul>
+                     <li><a href="product.html">Products</a></li>
+                     <li><a href="Services.html">Servivice</a></li>	
+                 </ul>
+             </div>
+                <div class="footer-col" style="width: 300px; padding-top:20px ;">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+             
+            </div>
+         
+        </div>
+        <div class="copyright">
+            <center><hr class="line" style="width: 90%;"> </center>
+            <div class="copyright-text">
+               Copyright © 2021 ZetroneX Solutions. All Rights Reserved.
+            </div>
+        </div>
+   </footer>
+ 
+    <!-- End Footer section  -->
+
+</body>
+
+</html>

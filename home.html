@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google font -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Page Title -->
+    <title>ZetroneX</title>
+    <!-- Font awson icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!--Navigation bar start-->
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+            <div class="content">
+
+                <div class="logo">
+                    <a href="home.html"><img src="img/logo .png"></a>
+                </div>
+
+                <ul class="links">
+                    <li class="menu"><a href="home.html"><span style="font-size: 30px;text-shadow: 2px 2px 50px white,2px 2px 50px white,2px 2px 20px white;">Home</span></a></li>
+                    <li class="menu"><a href="about.html">About</a></li>
+                    <li class="menu">
+                        <a href="#" class="desktop-link">Features</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="customers.html">Customers</a></li>
+                    <li class="menu"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu"><a href="support.html">Support</a></li>
+                    <li class="menu" id="login"><a href="login.html"><i class="fa fa-user"></i> <span id="logintext"> Login</span></a></li>
+                </ul>
+
+            </div>
+
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon" id="go"><i class="fas fa-long-arrow-alt-right"></i></button>
+                
+            </form>
+
+        </nav>
+    </div>
+
+    <!--Navigation bar End-->
+
+
+    <!--Main section start-->
+
+
+    <div class="background">
+
+        <div class="text-box">
+            <div class="linex"></div>
+            <div class="layer"></div>
+            <h1>Zetr<span class="ve">oneX</span></h1>
+        </div>
+
+    </div>
+
+    <!--Main section end-->
+
+    <!-- conter animation-->
+    
+   <div class="counter-animation col-md-4">
+    <div class="counter-container">
+        <i class="fas fa-user-check"></i>
+        <div class="counter" data-target="457"></div>
+        <span>Projects</span>
+    </div>
+    <div class="counter-container">
+        <i class="fas fa-users"></i>
+        <div class="counter" data-target="387094"></div>
+        <span>Community</span>
+    </div>
+    <div class="counter-container">
+        <i class="fas fa-user-clock"></i>
+        <div class="counter" data-target="52578"></div>
+        <span>Hours of works</span>
+    </div>
+   </div>
+            <!-- counteranimation -->
+   <script>
+
+       const counters = document.querySelectorAll('.counter');
+       counters.forEach((counter) => {
+        counter.innerText ='0';
+
+        const updatecounter = () =>{
+            const target = counter.getAttribute('data-target');
+            const c = +counter.innerText;
+            const increment =target /250;
+            if (c < target){
+                counter.innerText = `${Math.ceil(c + increment)}`;
+                setTimeout(updatecounter, 1);
+                
+            }
+            else{
+                counter.innerText = target;
+            }
+        };
+        updatecounter();
+       });
+   </script>
+</body>
+
+</html>
